@@ -1,0 +1,80 @@
+useDynLib(mcr, .registration=TRUE)
+
+### imported generics and functions
+import(methods)
+importFrom("graphics","plot")
+
+
+### Generics and functions defined in this package
+export(
+	"calcBias",
+	"calcCUSUM",
+	"calcResponse",
+	"compareFit",
+	"getCoefficients",
+	"getData",
+	"getErrorRatio",
+	"getWeights",
+	"getRegmethod",
+	"getResiduals",
+	"getFitted",
+	"getRJIF",
+	"includeLegend",
+	"mcreg",
+	"plot",
+	"plotBias",
+	"plotDifference",
+	"plotResiduals",
+	"plotwithRJIF",
+	"printSummary",
+	"MCResult.calcBias",
+	"MCResult.calcCUSUM",
+	"MCResult.calcResponse",
+	"MCResult.getCoefficients",
+	"MCResult.getData",
+	"MCResult.getErrorRatio",
+	"MCResult.getRegmethod",
+	"MCResult.getResiduals",
+	"MCResult.getFitted",
+	"MCResult.getWeights",
+	"MCResult.initialize",
+	"MCResult.plot",
+	"MCResult.plotBias",
+	"MCResult.plotDifference",
+	"MCResult.plotResiduals",
+	"MCResult.printSummary",
+	"MCResultAnalytical.calcResponse",
+	"MCResultAnalytical.initialize",
+	"MCResultAnalytical.printSummary",
+	"MCResultBCa.bootstrapSummary",
+	"MCResultBCa.calcResponse",
+	"MCResultBCa.initialize",
+	"MCResultBCa.plotBootstrapCoefficients",
+	"MCResultBCa.plotBoxEllipses",
+	"MCResultBCa.plotBootstrapT",
+	"MCResultBCa.printSummary",
+	"MCResultJackknife.calcResponse",
+	"MCResultJackknife.getJackknifeIntercept",
+	"MCResultJackknife.getJackknifeSlope",
+	"MCResultJackknife.getJackknifeStatistics",
+	"MCResultJackknife.getRJIF",
+	"MCResultJackknife.initialize",
+	"MCResultJackknife.plotwithRJIF",
+	"MCResultJackknife.printSummary",
+	"MCResultResampling.bootstrapSummary",
+	"MCResultResampling.calcResponse",
+	"MCResultResampling.initialize",
+	"MCResultResampling.plotBootstrapCoefficients",
+	"MCResultResampling.plotBoxEllipses",
+	"MCResultResampling.plotBootstrapT",
+	"MCResultResampling.printSummary"
+)
+
+### exported classes
+exportClasses(
+	"MCResult",
+	"MCResultAnalytical",
+	"MCResultBCa",
+	"MCResultJackknife",
+	"MCResultResampling"
+)
